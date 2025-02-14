@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HEPi">
+  <meta name="keywords" content="Reinforcement Learning, Diverse Skill Learning, Skill discovery, Automatic Curriculum
+  Learning, Mixture of Experts">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEPi</title>
+
+  <!--  &lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+  <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+  <!--  <script>-->
+  <!--    window.dataLayer = window.dataLayer || [];-->
+
+  <!--    function gtag() {-->
+  <!--      dataLayer.push(arguments);-->
+  <!--    }-->
+
+  <!--    gtag('js', new Date());-->
+
+  <!--    gtag('config', 'G-PYVRSFMDRL');-->
+  <!--  </script>-->
+
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="./static/images/Untitled.ico">
+  <!-- <link rel="icon" href="./static/images/alr-logo_large.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Geometry-aware RL for Manipulation of Varying Shapes and Deformable
+              Objects</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href=https://alr.iar.kit.edu/21_528.php>Tai Hoang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href=https://alr.iar.kit.edu/21_654.php target="_blank">Huy Le</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href=https://alr.iar.kit.edu/21_72.php>Philipp Becker</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href=>Ngo Anh Vien</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href=https://alr.iar.kit.edu/21_65.php target=_blank>Gerhard Neumann</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Autonomous Learning Robots (ALR), Karlsruhe Institute of Technology
+                (KIT)</span>
+              <span class="author-block"><sup>2</sup>Bosch Center for Artificial Intelligence</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=7BLXhmWvwF"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2403.06966" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/thobotics/geometry_rl"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (available soon)</span>
+                  </a>
+                </span>
+              </div>
+              This paper was published at <a href="https://iclr.cc/Conferences/2025"> ICLR 2025 (<b>Oral</b>) </a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <img src="./static/images/Fig_1_full-1.png">
+      <figcaption>
+        <strong>Figure 1.</strong> Illustration of our diverse and challenging manipulation tasks, involving both rigid
+        and deformable objects. These tasks require precise control under complex geometric constraints, coordination
+        between multiple actuators, and handling of intricate interactions between objects and actuators. The variety of
+        tasks highlights the need for policies that can understand the geometric structure in large observation and
+        action spaces.
+      </figcaption>
+
+    </div>
+    </div>
+  </section> -->
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/rigid_pushing_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/insertion.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/rigid_insertion_two_agents_2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/cloth_hanging.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/rope_closing.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/main/rope_shaping_w.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Manipulating objects with varying geometries and deformable objects is a major challenge in robotics. Tasks
+            such as insertion with different objects or cloth hanging require precise control and effective modelling of
+            complex dynamics. In this work, we frame this problem through the lens of a heterogeneous graph that
+            comprises smaller sub-graphs, such as actuators and objects, accompanied by different edge types describing
+            their interactions. This graph representation serves as a unified structure for both rigid and deformable
+            objects tasks, and can be extended further to tasks comprising multiple actuators. To evaluate this setup,
+            we present a novel and challenging reinforcement learning benchmark, including rigid insertion of diverse
+            objects, as well as rope and cloth manipulation with multiple end-effectors. These tasks present a large
+            search space, as both the initial and target configurations are uniformly sampled in 3D space. To address
+            this issue, we propose a novel graph-based policy model, dubbed <strong>Heterogeneous Equivariant Policy
+              (HEPi)</strong>, utilizing <em>SE(3)</em> equivariant message passing networks as the main backbone to
+            exploit
+            the geometric symmetry. In addition, by modeling explicit heterogeneity, HEPi can outperform
+            Transformer-based and non-heterogeneous equivariant policies in terms of average returns, sample efficiency,
+            and generalization to unseen objects.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <h2 class="title is-3">Robotic Manipulation as Heterogeneous Graphs</h2>
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <!-- <h2 class="title is-4">Specializing and Overlapping Context Distributions lead to Diverse Skills</h2> -->
+          <img src="./static/images/Fig_2_full-1.png">
+          <br />
+          <br />
+          <p>
+            <strong>Left:</strong> A <em>Cloth-Hanging</em> task represented by a
+            heterogeneous
+            graph that
+            comprises two
+            disjoint node sets, objects, and actuators, connected through directed, fully-connected inter-edges.
+            Intra-edges
+            occur within each set (both objects and actuators) to capture relationships within clusters. Information is
+            aggregated from objects to actuators via inter-edges. The target distance is absorbed into the feature
+            representation rather than treated as a separate node type. <strong>Right:</strong> Overview of
+            <em>Heterogeneous Equivariant Policy (HEPi)</em>, consisting of multiple Equivariant Message Passing
+            Networks
+            (EMPNs) process the graph, and the outputs are aggregated to generate the final action.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{
+  hoang2025geometryaware,
+  title={Geometry-aware {RL} for Manipulation of Varying Shapes and Deformable Objects},
+  author={Tai Hoang and Huy Le and Philipp Becker and Vien Anh Ngo and Gerhard Neumann},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=7BLXhmWvwF}
+}
+      </code></pre>
+    </div>
+  </section>
+
+
+  <!--<footer class="footer">-->
+  <!--  <div class="container">-->
+  <!--    <div class="content has-text-centered">-->
+  <!--      <a class="icon-link"-->
+  <!--         href="./static/videos/nerfies_paper.pdf">-->
+  <!--        <i class="fas fa-file-pdf"></i>-->
+  <!--      </a>-->
+  <!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+  <!--        <i class="fab fa-github"></i>-->
+  <!--      </a>-->
+  <!--    </div>-->
+  <!--    <div class="columns is-centered">-->
+  <!--      <div class="column is-8">-->
+  <!--        <div class="content">-->
+  <!--          <p>-->
+  <!--            This website is licensed under a <a rel="license"-->
+  <!--                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative-->
+  <!--            Commons Attribution-ShareAlike 4.0 International License</a>.-->
+  <!--          </p>-->
+  <!--          <p>-->
+  <!--            This means you are free to borrow the <a-->
+  <!--              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,-->
+  <!--            we just ask that you link back to this page in the footer.-->
+  <!--            Please remember to remove the analytics code included in the header of the website which-->
+  <!--            you do not want on your website.-->
+  <!--          </p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</footer>-->
+
+</body>
+
+</html>
